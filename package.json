@@ -4,5 +4,20 @@
   "private": true,
   "repository": "https://github.com/JohnAlexanderG/test-web.git",
   "author": "Jhon Alexander Gil Beltran <johnalexand3rg@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --config webpack.config.js --mode=development --progress ",
+    "prod": "webpack --config webpack.config.js --mode=production --progress "
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "firebase": "^8.6.2"
+  }
 }

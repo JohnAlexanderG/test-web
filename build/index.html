@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <ul class="nav-ppal">
+        <li class="nav-ppal__item nav-ppal__sing-in">Sign In</li>
+        <li class="nav-ppal__item nav-ppal__sing-up">Sing Up</li>
+        <div class="profile">
+          <div class="profile_avatar avatar">
+            <img class="avatar__user-image" src="./assets/images/avatar.webp" alt="avatar $username" />
+          </div>
+          <ul class="profile-account nav-account">
+            <li class="nav-account__username">John Doe</li>
+            <li class="nav-account__item nav-account__profile" id="profile">
+              <div data-icon="a" class="icon"></div>
+              Profile
+            </li>
+            <li class="nav-account__item nav-account__settings" id="settings">
+              <div data-icon="b" class="icon"></div>
+              Settings
+            </li>
+            <li class="nav-account__item nav-account__sing-out" id="singOut">
+              <div data-icon="c" class="icon"></div>
+              Sing Out
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </header>
+    <div class="wrapper">
+      <section class="wrapper__undraw undraw">
+        <img class="undraw__image" src="./assets/images/undraw_Nature_benefits_re_kk70.svg" alt="">
+      </section>
+      <section class="wrapper__conection conection">
+        <form class="conection__form form-data">
+          <label class="form-data__item form-data__first-name" for="firstName">
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" autocomplete="off" >
+          </label>
+          <label class="form-data__item form-data__last-name" for="lastName">
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" autocomplete="off" >
+          </label>
+          <label class="form-data__item form-data__email" for="email">
+            <input type="email" name="email" id="email" placeholder="Your@email.com" autocomplete="off" >
+          </label>
+          <label class="form-data__item form-data__password" for="password">
+            <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" >
+          </label>
+          <button class="form-data__sing-in-button" id="singInButton">Sing In</button>
+          <button class="form-data__sing-up-button" id="singUpButton">Sing Up</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="./js/firebase-app-min.js"></script>
+  <script src="./js/firebase-auth-min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
