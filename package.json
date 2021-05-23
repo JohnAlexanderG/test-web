@@ -1,0 +1,8 @@
+{
+  "name": "test-web",
+  "version": "0.0.1",
+  "private": true,
+  "repository": "https://github.com/JohnAlexanderG/test-web.git",
+  "author": "Jhon Alexander Gil Beltran <johnalexand3rg@gmail.com>",
+  "license": "MIT"
+}
