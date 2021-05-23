@@ -12,3 +12,11 @@ firebase.auth().createUserWithEmailAndPassword(username, password)
         console.log(error);
     }
 });
+
+firebase.auth().signOut()
+.then(() => {
+    console.log("ha cerrado sesion")
+})
+.catch((error) =>  {
+    console.log(error);
+});
